@@ -1,0 +1,49 @@
+package test.cst8284.calculator;
+import cst8284.calculator.*;
+
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestComplex {
+
+	@Test
+	public void testComplex() {
+		assertNotNull(new Complex());
+	}
+
+	@Test
+	public void testGetReal() {
+		Complex c = new Complex(1,2);
+		assertEquals(1,c.getReal(),0.0000001);
+	}
+
+	@Test
+	public void testSetReal() {
+		Complex c = new Complex(1.5,2.5);
+		c.setReal(8.5);
+		assertEquals(8.5,c.getReal(),0.0000001);
+	}
+
+	@Test
+	public void testEquals() {
+		Complex c = new Complex();
+		c.setReal(1);
+		c.setImag(2);
+		assertTrue(c.equals("1.0 + 2.0i"));
+	}
+	
+	@Test
+	public void testConjugate() {
+		ComplexCalculator c= new ComplexCalculator();
+		for (int i=-2;i<3;i++) {
+			for (int j=-2;j<3;j++) {
+				Complex c1= new Complex(i,j);
+				assertTrue(c.multiply(c1,c1.conjugate()).getImag()==9);
+			}
+		}
+	}
+
+
+}

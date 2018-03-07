@@ -1,0 +1,36 @@
+package cst8284.shape;
+//import java.lang.Math.*;
+
+public class Circle extends BasicShape {
+	private double width;
+	public Circle() {
+		this(1);	
+	}
+	
+	public Circle(double width) {
+		this.setWidth(width);
+	}
+	
+	public Circle(Circle circle) {
+		this(circle.getWidth());
+	}
+	
+	public double getArea() {
+		return  width*width*Math.PI/4;
+	}
+	
+	public double getPerimeter() {
+		return width*Math.PI;
+	}
+	
+	@Override
+	public String toString() {
+		return ("Circle Overrides " + super.toString());
+		
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return this.getWidth()==((Circle)obj).getWidth() && obj instanceof Circle;	
+	}
+}
