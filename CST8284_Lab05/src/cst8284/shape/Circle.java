@@ -30,8 +30,7 @@ public class Circle extends BasicShape {
 	}
 	
 	@Override
-	public boolean equals(Object obj) {
-		//return obj instanceof Circle && this.getWidth()==((Circle)obj).getWidth();	
+	public boolean equals(Object obj) {	
 		return obj instanceof Circle && this.getWidth()==((Circle)obj).getWidth();	
 	}
 }

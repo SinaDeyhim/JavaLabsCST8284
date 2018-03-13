@@ -15,6 +15,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\algonquin\Second\java\lab\lab6\CST8284_Lab06"/>
 			<item value="C:\algonquin\Second\java\lab\lab5\CST8284_Lab05"/>
 			<item value="C:\algonquin\Second\java\lab\lab2\CST8284_Lab02"/>
 			<item value="C:\algonquin\Second\java\lab\lab3\CST8284_Lab03"/>
